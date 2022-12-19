@@ -11,7 +11,7 @@ class StripeController {
 
     try {
       const paymentIntent = await stripe.paymentIntents.create({
-        amount,
+        amount: amount,
         currency: "sgd",
       });
 
